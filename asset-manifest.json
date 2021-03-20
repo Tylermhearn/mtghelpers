@@ -1,8 +1,8 @@
 {
   "files": {
     "main.css": "/mtghelpers/static/css/main.8c8b27cf.chunk.css",
-    "main.js": "/mtghelpers/static/js/main.5536a96d.chunk.js",
-    "main.js.map": "/mtghelpers/static/js/main.5536a96d.chunk.js.map",
+    "main.js": "/mtghelpers/static/js/main.cf76199f.chunk.js",
+    "main.js.map": "/mtghelpers/static/js/main.cf76199f.chunk.js.map",
     "runtime-main.js": "/mtghelpers/static/js/runtime-main.eea42e29.js",
     "runtime-main.js.map": "/mtghelpers/static/js/runtime-main.eea42e29.js.map",
     "static/js/2.3459cc71.chunk.js": "/mtghelpers/static/js/2.3459cc71.chunk.js",
@@ -18,6 +18,6 @@
     "static/js/runtime-main.eea42e29.js",
     "static/js/2.3459cc71.chunk.js",
     "static/css/main.8c8b27cf.chunk.css",
-    "static/js/main.5536a96d.chunk.js"
+    "static/js/main.cf76199f.chunk.js"
   ]
 }
