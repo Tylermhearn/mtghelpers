@@ -1,23 +1,23 @@
 {
   "files": {
-    "main.css": "/mtghelpers/static/css/main.8c8b27cf.chunk.css",
-    "main.js": "/mtghelpers/static/js/main.cf76199f.chunk.js",
-    "main.js.map": "/mtghelpers/static/js/main.cf76199f.chunk.js.map",
-    "runtime-main.js": "/mtghelpers/static/js/runtime-main.eea42e29.js",
-    "runtime-main.js.map": "/mtghelpers/static/js/runtime-main.eea42e29.js.map",
-    "static/js/2.3459cc71.chunk.js": "/mtghelpers/static/js/2.3459cc71.chunk.js",
-    "static/js/2.3459cc71.chunk.js.map": "/mtghelpers/static/js/2.3459cc71.chunk.js.map",
-    "static/js/3.d4f7fa0f.chunk.js": "/mtghelpers/static/js/3.d4f7fa0f.chunk.js",
-    "static/js/3.d4f7fa0f.chunk.js.map": "/mtghelpers/static/js/3.d4f7fa0f.chunk.js.map",
+    "main.css": "/mtghelpers/static/css/main.9d5b29c0.chunk.css",
+    "main.js": "/mtghelpers/static/js/main.6f1f7e42.chunk.js",
+    "main.js.map": "/mtghelpers/static/js/main.6f1f7e42.chunk.js.map",
+    "runtime-main.js": "/mtghelpers/static/js/runtime-main.e765898d.js",
+    "runtime-main.js.map": "/mtghelpers/static/js/runtime-main.e765898d.js.map",
+    "static/css/2.4c97ca4f.chunk.css": "/mtghelpers/static/css/2.4c97ca4f.chunk.css",
+    "static/js/2.43b6f125.chunk.js": "/mtghelpers/static/js/2.43b6f125.chunk.js",
+    "static/js/2.43b6f125.chunk.js.map": "/mtghelpers/static/js/2.43b6f125.chunk.js.map",
     "index.html": "/mtghelpers/index.html",
-    "static/css/main.8c8b27cf.chunk.css.map": "/mtghelpers/static/css/main.8c8b27cf.chunk.css.map",
-    "static/js/2.3459cc71.chunk.js.LICENSE.txt": "/mtghelpers/static/js/2.3459cc71.chunk.js.LICENSE.txt",
-    "static/media/logo.6ce24c58.svg": "/mtghelpers/static/media/logo.6ce24c58.svg"
+    "static/css/2.4c97ca4f.chunk.css.map": "/mtghelpers/static/css/2.4c97ca4f.chunk.css.map",
+    "static/css/main.9d5b29c0.chunk.css.map": "/mtghelpers/static/css/main.9d5b29c0.chunk.css.map",
+    "static/js/2.43b6f125.chunk.js.LICENSE.txt": "/mtghelpers/static/js/2.43b6f125.chunk.js.LICENSE.txt"
   },
   "entrypoints": [
-    "static/js/runtime-main.eea42e29.js",
-    "static/js/2.3459cc71.chunk.js",
-    "static/css/main.8c8b27cf.chunk.css",
-    "static/js/main.cf76199f.chunk.js"
+    "static/js/runtime-main.e765898d.js",
+    "static/css/2.4c97ca4f.chunk.css",
+    "static/js/2.43b6f125.chunk.js",
+    "static/css/main.9d5b29c0.chunk.css",
+    "static/js/main.6f1f7e42.chunk.js"
   ]
 }
