@@ -1,0 +1,7 @@
+.mainbody {
+  background-color: #23232e;
+  position: absolute;
+  top: 56px; /* Header Height */
+  bottom: 20px; /* Footer Height */
+  width: 100%;
+}
