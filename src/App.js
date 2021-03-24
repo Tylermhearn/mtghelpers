@@ -1,13 +1,14 @@
-import './App.css';
-import React, { useState, useCallback } from 'react'
-import { BrowserRouter as Router, Route, Switch, Link } from 'react-router-dom'
-import { Provider, useSelector } from 'react-redux'
+import "./App.css";
+import React, { useState, useCallback } from "react";
+import { BrowserRouter as Router, Route, Switch, Link } from "react-router-dom";
+import { Provider, useSelector } from "react-redux";
 
-import { Row, Col } from 'reactstrap';
-import LandingPage from './Components/LandingPage'
-import Collection from './Components/Collection'
+import { Row, Col } from "reactstrap";
+import LandingPage from "./Components/LandingPage";
+import Collection from "./Components/Collection";
+import NavigationBar from "./Components/NavigationBar";
 
-function App() {
+function Routes() {
   return (
     <Switch>
       <Route exact path='/collection' component={Collection} />
@@ -16,10 +17,13 @@ function App() {
   );
 }
 
-export default () => {
+function App() {
   return (
     <div>
-      <App />
+      <NavigationBar />
+      <Routes />
     </div>
   );
 }
+
+export default App;
