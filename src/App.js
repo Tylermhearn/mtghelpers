@@ -1,12 +1,11 @@
 import "./App.css";
-import React, { useState, useCallback } from "react";
-import { BrowserRouter as Router, Route, Switch, Link } from "react-router-dom";
-import { Provider, useSelector } from "react-redux";
+import React from "react";
+import { Route, Switch } from "react-router-dom";
 
-import { Row, Col } from "reactstrap";
 import LandingPage from "./Components/LandingPage";
 import Collection from "./Components/Collection";
 import NavigationBar from "./Components/NavigationBar";
+import Footer from "./Components/Footer";
 
 function Routes() {
   return (
@@ -22,6 +21,7 @@ function App() {
     <div>
       <NavigationBar />
       <Routes />
+      <Footer />
     </div>
   );
 }

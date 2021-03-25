@@ -8,7 +8,7 @@ const NavigationBar = (props) => {
 
   return (
     <div>
-      <Navbar style={{ backgroundColor: "#222033" }} dark expand='md'>
+      <Navbar style={{ backgroundColor: "#dc9e82" }} dark expand='md'>
         <NavbarBrand href='/'>MTG Helpers</NavbarBrand>
         <NavbarToggler onClick={toggle} />
         <Collapse isOpen={isOpen} navbar></Collapse>
