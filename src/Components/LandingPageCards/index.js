@@ -1,12 +1,12 @@
 import React from "react";
-import "./FrontPageCards.css";
-import { Card, CardImg, CardText, CardBody, CardTitle, Button } from "reactstrap";
-import { Link } from "react-router-dom";
+import "./LandingPageCards.css";
+import { Card, CardImg, CardText, CardBody, CardTitle } from "reactstrap";
+import CollectionButton from "../Buttons/CollectionButton";
 
 import * as image1 from "../../assets/collectionimg.jpg";
 const collecitonImgLink = "https://cdn-images-1.listennotes.com/podcasts/the-mtg-collection-builder-podcast-mtgcb-cU7yBv2ksjK-1cXYuoiNTl8.1400x1400.jpg";
 
-const FrontPageCards = () => {
+const LandingPageCards = () => {
   return (
     <div className='Card'>
       <Card inverse style={{ backgroundColor: "#333", borderColor: "#333" }}>
@@ -18,15 +18,11 @@ const FrontPageCards = () => {
         <CardBody>
           <CardTitle tag='h1'>Collection</CardTitle>
           <CardText>View, Edit, Import, Export your collection here</CardText>
-          <Button block>
-            <Link to='/collection' className='link'>
-              Go to collection
-            </Link>
-          </Button>
+          <CollectionButton />
         </CardBody>
       </Card>
     </div>
   );
 };
 
-export default FrontPageCards;
+export default LandingPageCards;

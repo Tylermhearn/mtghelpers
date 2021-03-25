@@ -1,7 +1,7 @@
 import "./LandingPage.css";
 import React from "react";
 import { Container, Row, Col } from "reactstrap";
-import FrontPageCards from "../FrontPageCards";
+import LandingPageCards from "../LandingPageCards";
 
 function LandingPage() {
   return (
@@ -9,7 +9,7 @@ function LandingPage() {
       <Container>
         <Row className='justify-content-md-center'>
           <Col sm='4'>
-            <FrontPageCards />
+            <LandingPageCards />
           </Col>
         </Row>
       </Container>
