@@ -1,14 +1,13 @@
-import React from 'react';
-import { Container, Row, Col } from 'reactstrap';
+import React from "react";
+import { Container, Row, Col } from "reactstrap";
+import { BasicTable } from "./BasicTable";
 
 function Collection() {
-    return (
-        <Container>
-            <Row>
-                <Col>Collection</Col>
-            </Row>
-        </Container>
-    );
+  return (
+    <div>
+      <BasicTable />
+    </div>
+  );
 }
 
 export default Collection;
