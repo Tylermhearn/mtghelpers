@@ -1,16 +1,19 @@
 import React, { useMemo } from "react";
 import { useTable } from "react-table";
-import MOCK_DATA from "../../mock/MOCK_DATA2.json";
 import { COLUMNS } from "./columns";
+import GetCard from "../../actions/GetCard";
+import GetLibrary from "../../actions/GetLibrary";
+import MOCK_DATA2 from "../../mock/MOCK_DATA2.json";
 import "./table.css";
 
 export const BasicTable = () => {
+  const data = GetCard("Mana Crypt");
+  const DATA = GetLibrary();
   const columns = useMemo(() => COLUMNS, []);
-  const data = useMemo(() => MOCK_DATA, []);
 
   const { getTableProps, getTableBodyProps, headerGroups, rows, prepareRow } = useTable({
     columns,
-    data,
+    data: DATA,
   });
 
   return (
