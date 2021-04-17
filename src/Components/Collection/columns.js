@@ -4,11 +4,11 @@ export const COLUMNS = [
     accessor: "name",
   },
   {
-    Header: "Card Type",
-    accessor: "type_line",
+    Header: "Set Name",
+    accessor: "set_name",
   },
   {
-    Header: "Card Price",
-    accessor: "prices.usd",
+    Header: "Set Code",
+    accessor: "set_code",
   },
 ];
