@@ -1,7 +1,7 @@
 import { useState, useEffect } from "react";
 
 function GetLibrary() {
-  const [cards, setCard] = useState({});
+  const [cards, setCard] = useState([{}]);
 
   useEffect(() => {
     fetch("/library")
