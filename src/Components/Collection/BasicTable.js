@@ -6,14 +6,22 @@ import GetLibrary from "../../actions/GetLibrary";
 import MOCK_DATA2 from "../../mock/MOCK_DATA2.json";
 import "./table.css";
 
+import { useAsyncEffect } from 'use-async-ops'
+
 export const BasicTable = () => {
-  const data = GetCard("Mana Crypt");
-  const DATA = GetLibrary();
+
+  const { loading } = useAsyncEffect({ name: services.GET_LIBRARY })
+
+  const d = GetCard("Mana Crypt");
+  const data = GetLibrary();
   const columns = useMemo(() => COLUMNS, []);
+
+  console.log(d)
+  console.log(data)
 
   const { getTableProps, getTableBodyProps, headerGroups, rows, prepareRow } = useTable({
     columns,
-    data: DATA,
+    data
   });
 
   return (
