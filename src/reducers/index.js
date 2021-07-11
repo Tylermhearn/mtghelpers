@@ -1,9 +1,11 @@
 import { combineReducers } from "redux";
+import { reducer as asyncops } from '../utils/legacyAsyncOpsAdapter'
+import cardsReducer from './cards'
 
-import collection from "./collection";
 
 const rootReducer = combineReducers({
-  collection,
+  asyncops,
+  cardsReducer
 });
 
 export default rootReducer;
