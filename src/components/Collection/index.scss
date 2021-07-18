@@ -7,11 +7,6 @@ $light-background: lighten(desaturate($base-color, 50%), 12.5%);
   vertical-align: middle;
 }
 
-.photo {
-    height: 340px;
-    width: 244px; 
-}
-
 .country-card-container {
   height: 60px;
   cursor: pointer;
@@ -61,4 +56,9 @@ ul.pagination {
       background-color: $light-background;
     }
   }
+}
+
+.photo {
+  height: 340px;
+  width: 244px; 
 }
