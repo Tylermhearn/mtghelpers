@@ -1,36 +1,45 @@
-import React from "react";
+import React from 'react';
 import { useSelector } from "react-redux";
 import library from "../../selectors/library";
-import { Table, Col, Button, Row } from 'reactstrap'
+import Pagination from './Pagination';
 
-// const MapCardImages = ({ imgUri }) => <img src={imgUri} alt="Logo" />
+const cardSort = (a, b) => {
+    if (a.extras === '' && b.extras === '') {
+        return (b.prices.usd - a.prices.usd)
+    }
+    else if (a.extras === 'foil' && b.extras === '') {
+        return (b.prices.usd - a.prices.usd_foil)
+    }
+    else if (a.extras === '' && b.extras === 'foil') {
+        return (b.prices.usd_foil - a.prices.usd)
+    }
+    else {
+        return (b.prices.usd_foil - a.prices.usd_foil)
+    }
+}
 
-const MapCardImages = ({ imgUri }) =>
-    <tr>
-        <td><img src={imgUri} alt="Logo" /></td>
-    </tr>
+const cardFilter = (card) => {
+    return (
+        card.color_identity.includes('B') || card.color_identity.includes('G') && !card.color_identity.includes('U') && !card.color_identity.includes('R') && !card.color_identity.includes('W')
+    )
+}
+
+const MapCardImages = ({ card }) =>
+    <div>
+        <img src={card.imgUri} alt="Logo" />
+    </div>
 
 const CardTable = () => {
     const cards = useSelector(library)
+    const temp = cards.filter(cardFilter).sort(cardSort)
     return (
         <div className='manifest'>
-            <Table className='mb-0'>
-                <thead>
-                    <tr>
-                        <th>Card</th>
-                    </tr>
-                </thead>
-                <tbody>
-                    {cards.map(card => <MapCardImages {...card} key={card.id} />)}
-                </tbody>
-            </Table>
+            <Pagination
+                data={temp}
+                title="Cards"
+            />
         </div>
     )
-    // const cards = useSelector(library)
-
-    // return (
-    //     <div>{cards.map(card => <MapCardImages {...card} />)}</div>
-    // )
 }
 
 export default CardTable

@@ -3,8 +3,22 @@ import { actionTypes as asyncTypes, isAsyncComplete, isAsyncOperation } from '..
 import * as serviceTypes from '../../constants/asyncOpNames'
 
 const initialState = [{
+    cmc: '',
+    collector_number: '',
+    color_identity: [],
+    extras: '',
     id: '',
-    name: ''
+    imgUri: '',
+    language: '',
+    name: '',
+    oracle_id: '',
+    prices: {},
+    quantity: '',
+    scryfall_id: '',
+    set_code: '',
+    set_name: '',
+    _id: '',
+    id: ''
 }]
 
 const complete = (action, state) => action.response
