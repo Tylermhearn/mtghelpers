@@ -2,6 +2,7 @@ import React from 'react';
 import { useSelector } from "react-redux";
 import library from "../../selectors/library";
 import Pagination from './Pagination';
+import Filter from './Filter';
 
 const cardSort = (a, b) => {
     if (a.extras === '' && b.extras === '') {
@@ -25,16 +26,16 @@ const cardFilter = (card) => {
 }
 
 const MapCardImages = ({ card }) =>
-    <div>
-        <img src={card.imgUri} alt="Logo" />
-    </div>
+    <img src={card.imgUri} alt="Logo" className='photo' />
 
 const CardTable = () => {
     const cards = useSelector(library)
     const temp = cards.filter(cardFilter).sort(cardSort)
     return (
-        <div className='manifest'>
+        <div className="container mb-5">
+            <Filter></Filter>
             <Pagination
+                RenderComponent={MapCardImages}
                 data={temp}
                 title="Cards"
             />
