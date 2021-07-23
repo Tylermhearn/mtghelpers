@@ -17,8 +17,8 @@ const initialState = [{
     scryfall_id: '',
     set_code: '',
     set_name: '',
+    type_line: '',
     _id: '',
-    id: ''
 }]
 
 const complete = (action, state) => action.response
